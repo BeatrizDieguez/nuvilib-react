@@ -1,0 +1,86 @@
+//mobile
+@mixin for-phone-only {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+//btn
+@mixin btn() {
+  background-color: transparent;
+  color: var(--c-primary);
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: var(--fs-base);
+  border: 2px solid var(--c-primary);
+  cursor: pointer;
+  transition: background-color 0.5s;
+  &:hover {
+    background-color: var(--c-primary);
+    color: var(--c-sweet);
+  }
+}
+
+@mixin cta-container() {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 40px;
+  a {
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+}
+
+//title
+@mixin h1() {
+  font-family: var(--ff-title);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--c-primary);
+  text-align: center;
+  font-size: var(--fs-xxxl);
+  font-weight: 600;
+  line-height: 80px;
+  text-transform: uppercase;
+  &.lowcase {
+    font-weight: 500;
+    text-transform: inherit;
+    font-size: 3.4rem;
+  }
+}
+
+@mixin h2() {
+  font-family: var(--ff-title);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--c-primary);
+  text-align: center;
+  font-size: var(--fs-xxl);
+  font-weight: 500;
+  line-height: 48px;
+}
+
+@mixin h3() {
+  font-family: var(--ff-title);
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: var(--c-primary);
+  text-align: center;
+  font-size: var(--fs-xl);
+  font-weight: 500;
+  line-height: 34px;
+}
+
+//paragraphe
+@mixin p {
+  line-height: 30px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: var(--fs-base);
+}
