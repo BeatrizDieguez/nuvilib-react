@@ -1,0 +1,31 @@
+:root {
+  //font
+  //font-family
+  --ff-base: "Raleway", sans-serif;
+  --ff-title: "Oswald", serif;
+  --ff-hand: "Parisienne", cursive;
+
+  //font-size
+  --fs-hand-xxxl: 3rem;
+  --fs-xxxl: 3.8rem; //16px
+  --fs-xxl: 2.2rem; //16px
+  --fs-xl: 1.4rem; //16px
+  --fs-l: 1.3rem; //16px
+  --fs-base: 1.1rem; //16px
+  --fs-s: 0.95rem; //14px
+  --fs-xs: 0.9rem; //14px
+  --fs-xxs: 0.8rem; //14px
+
+  //color
+  --c-primary: #46544a;
+  --c-sweet: #f3f0e4;
+  --c-sweet-light: #fcfaf4;
+  --c-link: #0f422f;
+  --c-link-hover: #618275;
+
+  --bc-green: #e8ede8;
+  --bc-green-block: #75a071;
+  --bc-sweet: #f3f0e4;
+  --bc-teal: #c9efeb;
+  --bc-green-dark: #004a22;
+}
